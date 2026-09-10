@@ -11,13 +11,13 @@ export const Route = createFileRoute("/")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "AADIVASI — UAV Tactical Command Deck" },
+      { title: "DRONE — UAV Tactical Command Deck" },
       {
         name: "description",
         content:
           "Dual-pane UAV command dashboard: live detection feed with bounding boxes and an interactive 3D battlespace with hostile infantry and vehicle tracks.",
       },
-      { property: "og:title", content: "AADIVASI — UAV Tactical Command Deck" },
+      { property: "og:title", content: "DRONE — UAV Tactical Command Deck" },
       {
         property: "og:description",
         content:
