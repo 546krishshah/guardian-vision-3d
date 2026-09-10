@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AADIVASI — UAV Tactical Command Deck" },
+      { title: "DRONE — UAV Tactical Command Deck" },
       {
         name: "description",
         content: "Real-time UAV ISR dashboard with 2D detection overlay and 3D battlespace view.",
       },
-      { name: "author", content: "AADIVASI" },
-      { property: "og:title", content: "AADIVASI — UAV Tactical Command Deck" },
+      { name: "author", content: "DRONE" },
+      { property: "og:title", content: "DRONE — UAV Tactical Command Deck" },
       {
         property: "og:description",
         content: "Real-time UAV ISR dashboard with 2D detection overlay and 3D battlespace view.",

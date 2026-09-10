@@ -11,13 +11,13 @@ export const Route = createFileRoute("/")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "AADIVASI — UAV Tactical Command Deck" },
+      { title: "DRONE — UAV Tactical Command Deck" },
       {
         name: "description",
         content:
           "Dual-pane UAV command dashboard: live detection feed with bounding boxes and an interactive 3D battlespace with hostile infantry and vehicle tracks.",
       },
-      { property: "og:title", content: "AADIVASI — UAV Tactical Command Deck" },
+      { property: "og:title", content: "DRONE — UAV Tactical Command Deck" },
       {
         property: "og:description",
         content:
@@ -37,7 +37,7 @@ function CommandDeck() {
     <div className="flex h-screen flex-col overflow-hidden">
       <header className="flex shrink-0 items-center justify-between border-b border-border bg-card/70 px-4 py-2">
         <div className="flex items-baseline gap-3">
-          <h1 className="text-xl text-primary">AADIVASI</h1>
+          <h1 className="text-xl text-primary">DRONE</h1>
           <span className="label-hud">UAV Tactical Command Deck</span>
         </div>
         <div className="flex items-center gap-5 text-[11px]">
