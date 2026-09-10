@@ -47,10 +47,16 @@ export function useTacticalFeed() {
       }
     }
 
+    let lastEmit = 0;
     const loop = (now: number) => {
       const dt = Math.min((now - last) / 1000, 0.1);
       last = now;
-      if (!live) setFrame(simRef.current(dt));
+      if (!live && now - lastEmit > 90) {
+        lastEmit = now;
+        setFrame(simRef.current(dt));
+      } else if (!live) {
+        simRef.current(dt);
+      }
       raf = requestAnimationFrame(loop);
     };
     raf = requestAnimationFrame(loop);
