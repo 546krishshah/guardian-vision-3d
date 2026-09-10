@@ -13,7 +13,7 @@ function SyntheticFeed() {
   useEffect(() => {
     const canvas = ref.current;
     if (!canvas) return;
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d", { willReadFrequently: true });
     if (!ctx) return;
     let raf = 0;
     const draw = (t: number) => {
