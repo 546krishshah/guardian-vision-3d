@@ -37,7 +37,7 @@ function CommandDeck() {
     <div className="flex h-screen flex-col overflow-hidden">
       <header className="flex shrink-0 items-center justify-between border-b border-border bg-card/70 px-4 py-2">
         <div className="flex items-baseline gap-3">
-          <h1 className="text-xl text-primary">AADIVASI</h1>
+          <h1 className="text-xl text-primary">DRONE</h1>
           <span className="label-hud">UAV Tactical Command Deck</span>
         </div>
         <div className="flex items-center gap-5 text-[11px]">
